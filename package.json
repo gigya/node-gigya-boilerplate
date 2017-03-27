@@ -7,8 +7,9 @@
     "start": "node dist/index.js",
     "dev": "nodemon src/index.js --exec babel-node",
     "build": "babel src -d dist",
-    "test": "chimp --mocha",
-    "test:watch": "chimp --mocha --watch"
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:e2e": "chimp",
+    "test:unit": "mocha --compilers js:babel-register"
   },
   "repository": {
     "type": "git",
