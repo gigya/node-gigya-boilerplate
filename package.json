@@ -1,0 +1,19 @@
+{
+  "name": "node-gigya-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate Node.js App using the Gigya accountJS Raas servic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/maxmckenzie/node-gigya-boilerplate.git"
+  },
+  "author": "max.mckenzie@gigya-inc.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxmckenzie/node-gigya-boilerplate/issues"
+  },
+  "homepage": "https://github.com/maxmckenzie/node-gigya-boilerplate#readme"
+}
