@@ -4,6 +4,7 @@ machine:
   pre:
     - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     - sudo dpkg -i google-chrome-stable_current_amd64.deb
+    - npm install babel-cli babel-preset-es2016 babel-preset-stage-0 babel-register -g
 
 compile:
   - npm run build
