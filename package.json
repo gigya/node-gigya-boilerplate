@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
-    "dev": "node src/index.js --exec babel-node",
+    "dev": "nodemon src/index.js --exec babel-node",
     "build": "babel src -d dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "chimp --mocha",
+    "test:watch": "chimp --mocha --watch"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,11 @@
   },
   "homepage": "https://github.com/maxmckenzie/node-gigya-boilerplate#readme",
   "devDependencies": {
-    "babel": "^6.23.0",
     "babel-cli": "^6.24.0",
     "babel-preset-es2016": "^6.22.0",
-    "babel-preset-stage-0": "^6.22.0"
+    "babel-preset-stage-0": "^6.22.0",
+    "babel-register": "^6.24.0",
+    "chimp": "^0.47.2",
+    "nodemon": "^1.11.0"
   }
 }
