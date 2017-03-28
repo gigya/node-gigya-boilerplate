@@ -13,11 +13,11 @@
     "dev": "nodemon --exec \"concurrently 'babel-node src/index.js' 'npm run test:all'\"",
     "build": "babel src -d dist",
     "lint": "eslint .",
-    "test": "concurrently 'npm start' 'npm run test:unit && npm run test:e2e && npm run lint'",
-    "test:all": "npm run test:unit && npm run test:e2e",
+    "test": "concurrently 'npm start' 'npm run test:all && npm stop' || true",
+    "test:all": "npm run test:unit && npm run test:e2e && npm run lint",
     "test:e2e": "chimp",
     "test:unit": "mocha --compilers js:babel-register",
-    "posttest": ""
+    "stop": "killall -0 -SIGINT node"
   },
   "repository": {
     "type": "git",
