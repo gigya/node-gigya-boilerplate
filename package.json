@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Boilerplate Node.js App using the Gigya accountJS Raas service",
   "main": "index.js",
+  "engineStrict" : true,
+  "engines" : {
+    "node" : "6.10.1",
+    "npm" : "3.10.10"
+  },
   "scripts": {
     "start": "node dist/index.js",
     "dev": "nodemon --exec \"concurrently 'babel-node src/index.js' 'npm run test:all'\"",
