@@ -29,6 +29,10 @@
     "babel-register": "^6.24.0",
     "chimp": "^0.47.2",
     "concurrently": "^3.4.0",
+    "eslint": "^3.18.0",
+    "eslint-config-standard": "^7.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.1.1",
     "nodemon": "^1.11.0"
   }
 }
