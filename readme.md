@@ -1,5 +1,7 @@
 # Node Gigya Boilerplate
 
+![Travis CI status](https://api.travis-ci.org/maxmckenzie/node-gigya-boilerplate.svg?branch=master "Travis CI eslint, unit and integration tests:")
+
 Boilerplate Node.js App using the Gigya accountJS Raas service. This project is intended to be used as a starting point for anyone working with the gigya platform on node.js
 
 Support: raise an issue on github https://github.com/maxmckenzie/node-gigya-boilerplate/issues
