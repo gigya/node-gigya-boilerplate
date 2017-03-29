@@ -15,7 +15,7 @@
     "lint": "eslint .",
     "test": "concurrently 'npm start' 'npm run test:all && npm stop' || true",
     "test:all": "npm run test:unit && npm run test:e2e && npm run lint",
-    "test:e2e": "chimp --browser:phantomjs",
+    "test:e2e": "chimp --browser=phantomjs",
     "test:unit": "mocha --compilers js:babel-register",
     "stop": "killall -0 -SIGINT node"
   },
@@ -34,7 +34,7 @@
     "babel-preset-es2016": "^6.22.0",
     "babel-preset-stage-0": "^6.22.0",
     "babel-register": "^6.24.0",
-    "chimp": "^0.47.2",
+    "chimp": "0.45.1",
     "concurrently": "^3.4.0",
     "eslint": "^3.18.0",
     "eslint-config-standard": "^7.1.0",
