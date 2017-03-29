@@ -6,6 +6,9 @@ module.exports = {
     ],
     "globals"   : {
       /* testing globals */
+      "pending"    : false,
+      "browser"    : false,
+      "expect"     : false,
       "describe"   : false,
       "it"         : false,
       "before"     : false,
