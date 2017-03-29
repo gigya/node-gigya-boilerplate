@@ -15,7 +15,7 @@
     "lint": "eslint .",
     "test": "concurrently 'npm start' 'npm run test:all && npm stop' || true",
     "test:all": "npm run test:unit && npm run test:e2e && npm run lint",
-    "test:e2e": "chimp",
+    "test:e2e": "chimp --browser:phantomjs",
     "test:unit": "mocha --compilers js:babel-register",
     "stop": "killall -0 -SIGINT node"
   },
