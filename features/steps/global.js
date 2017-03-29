@@ -8,4 +8,9 @@ module.exports = function () {
     console.log(`# Navigating to ${url + path}`)
     expect(browser.getUrl()).toEqual(url + path)
   })
+
+  this.Then(/^I should see the "([^"]*)" button$/, function (selector) {
+    // Write code here that turns the phrase above into concrete actions
+    return 'pending'
+  })
 }

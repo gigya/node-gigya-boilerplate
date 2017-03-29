@@ -3,3 +3,4 @@ Feature: Index
 
   Scenario: As a user when I want to be directed to the index page when i visit the site
     Given I open the url "/"
+    Then I should see the "login" button
