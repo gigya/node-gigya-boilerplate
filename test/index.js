@@ -10,5 +10,6 @@ describe('Gigya Node Server', () => {
       done()
     })
   })
-  it('should redirect you to the index if there is no login object')
+  it('should redirect to the index if there is no user logged in')
+  it('should redirect to the profile page after login')
 })
