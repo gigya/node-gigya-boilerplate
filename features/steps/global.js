@@ -9,6 +9,11 @@ module.exports = function () {
     expect(browser.getUrl()).toEqual(url + path)
   })
 
+  this.Then(/^I should see the text "([^"]*)"$/, function (arg1) {
+    // Write code here that turns the phrase above into concrete actions
+    return 'pending'
+  })
+
   this.Then(/^I should see the "([^"]*)" button$/, function (selector) {
     // Write code here that turns the phrase above into concrete actions
     return 'pending'
