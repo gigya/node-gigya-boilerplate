@@ -1,7 +1,7 @@
 import http from 'http'
 import assert from 'assert'
 
-const url = 'http://127.0.0.1:3000'
+const url = `${process.env.TEST_URL}:${process.env.PORT || process.env.DEFAULT_PORT}`
 
 describe('Gigya Node Server', () => {
   it('should return 200 when hitting the index', done => {
