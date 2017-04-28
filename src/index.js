@@ -1,8 +1,17 @@
-import http from 'http'
+import express from 'express'
+import path from 'path'
 
-http.createServer((req, res) => {
-  res.writeHead(200, {'Content-Type': 'text/plain'})
-  res.end('Hello World\n')
-}).listen(3000, '127.0.0.1')
+const app = express()
 
-console.log('Server running at http://127.0.0.1:3000/')
+app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, 'views'))
+
+app.get('/', (req, res) => {
+  res.render('pages/index')
+})
+
+app.set('port', (process.env.PORT || process.env.DEFAULT_PORT))
+
+app.listen(app.get('port'), () => {
+  console.log(`Node app is running on http://127.0.0.1:${app.get('port')}`)
+})

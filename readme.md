@@ -17,7 +17,9 @@ Support: raise an issue on github https://github.com/maxmckenzie/node-gigya-boil
 ## Install Dependencies
 
 The blow steps are for OSX, but you could replace brew with `yum` or `apt-get` and it should still work.
-> Windows user: your on your own with how to install but you still need the below installed
+> Windows user: your on your own with how to install but you still need the below installed. Also be aware that some of the commands in the packages.json may not work on a windows box. Linux or OSX is suggested for this Boilerplate.
+
+You should use node v6.10.1 Long term support or cucumber will not report errors correctly
 
 - `brew install node`
 - `brew install direnv`
@@ -39,3 +41,9 @@ This boots the app runs the unit and e2e tests. Then uses nodemon to wait for ch
 
 - `npm run build`
 - `npm start`
+
+## ToDo
+- express server
+- JS templates using pug or ejs
+- Gigya Client JS Raas implementation or the server side Gigya node.js be good to have examples for both.
+- .github/ template files

@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "Boilerplate Node.js App using the Gigya accountJS Raas service",
   "main": "index.js",
-  "engineStrict" : true,
-  "engines" : {
-    "node" : "6.10.1",
-    "npm" : "3.10.10"
+  "engineStrict": true,
+  "engines": {
+    "node": "6.10.1",
+    "npm": "3.10.10"
   },
   "scripts": {
     "start": "node dist/index.js",
     "dev": "nodemon --exec \"concurrently 'babel-node src/index.js' 'npm run test:all'\"",
-    "build": "babel src -d dist",
+    "build": "babel src -d dist && mkdir -p dist/views && cp -a src/views/. dist/views/.",
     "lint": "eslint .",
     "test": "concurrently 'npm start' 'npm run test:all && npm stop' || true",
     "test:all": "npm run test:unit && npm run test:e2e && npm run lint",
@@ -41,5 +41,9 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^2.1.1",
     "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
   }
 }
