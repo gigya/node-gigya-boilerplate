@@ -12,7 +12,9 @@ Support: raise an issue on github https://github.com/maxmckenzie/node-gigya-boil
 - mocha unit tests
 - webdriverio integration e2e tests using chimp
 - direnv directory based environment variables (so you do not need to install global node modules)
-- circle ci YAML file (but it does not work and i'm not that impressed by circle ci so i'll likely replace it with another CI such as travis)
+- Travis CI support
+- Express server
+- ejs templating
 
 ## Install Dependencies
 
@@ -43,7 +45,5 @@ This boots the app runs the unit and e2e tests. Then uses nodemon to wait for ch
 - `npm start`
 
 ## ToDo
-- express server
-- JS templates using pug or ejs
-- Gigya Client JS Raas implementation or the server side Gigya node.js be good to have examples for both.
 - .github/ template files
+- Gigya intergration
