@@ -24,6 +24,11 @@ app.get('/logout', (req, res) => {
 
 app.set('port', (process.env.PORT || process.env.DEFAULT_PORT))
 
-app.listen(app.get('port'), () => {
+const server = app.listen(app.get('port'), () => {
   console.log(`Node app is running on http://127.0.0.1:${app.get('port')}`)
 })
+
+module.exports = {
+  server,
+  app
+}

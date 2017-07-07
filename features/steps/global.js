@@ -1,7 +1,16 @@
 // http://webdriver.io/api.html
+import { server } from '../../src/index'
 
 module.exports = function () {
   const url = `${process.env.TEST_URL}:${process.env.PORT || process.env.DEFAULT_PORT}`
+
+  this.Before(() => {
+    server.listen()
+  })
+
+  this.After(() => {
+    server.close()
+  })
 
   this.Given(/^I open the url "([^"]*)"$/, (path) => {
     browser.url(url + path)
