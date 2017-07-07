@@ -12,8 +12,10 @@ Feature: Index
   Scenario: As a user I want to login with Facebook and access the account i just registered
     Given I open the url "/"
 
-  Scenario: As a user when I enter the wrong password i should see a notification
+  Scenario: As a user when I enter the wrong password I should see a notification
     Given I open the url "/"
 
   Scenario: As a user I want to delete my account
     Given I open the url "/"
+
+  Scenario: As a user I want to view and edit my profile
