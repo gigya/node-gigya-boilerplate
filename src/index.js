@@ -10,15 +10,15 @@ app.get('/', (req, res) => {
   res.render('pages/index')
 })
 
-app.get('/register', (res, req) => {
+app.get('/register', (req, res) => {
   res.render('pages/register')
 })
 
-app.get('/login', (res, req) => {
+app.get('/login', (req, res) => {
   res.render('pages/login')
 })
 
-app.get('/logout', (res, req) => {
+app.get('/logout', (req, res) => {
   res.redirect('/')
 })
 
