@@ -10,6 +10,18 @@ app.get('/', (req, res) => {
   res.render('pages/index')
 })
 
+app.get('/register', (res, req) => {
+  res.render('pages/register')
+})
+
+app.get('/login', (res, req) => {
+  res.render('pages/login')
+})
+
+app.get('/logout', (res, req) => {
+  res.redirect('/')
+})
+
 app.set('port', (process.env.PORT || process.env.DEFAULT_PORT))
 
 app.listen(app.get('port'), () => {
