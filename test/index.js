@@ -1,5 +1,4 @@
-import { app, server } from '../src/index'
-import request from 'supertest'
+import { app, server, request } from './common'
 
 describe('Boot Basic Server', () => {
   after(() => {
